@@ -58,6 +58,7 @@ Open Windows Power Shell and follow the below steps-
 **Step 1: Python Environment Setup**
 ```
 # Install required Python packages
+
 pip install pandas
 pip install mysql-connector-python
 pip install numpy

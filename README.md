@@ -193,7 +193,7 @@ World Map: Geographic Distribution
 
 Executive Summary Dashboard image
 
-![1](./powerbi_dashboard_screenshots/Executive_summary_ss.png)
+![1](./powerbi_dashboard_screenshots/Executive_summary_ss.PNG)
 
 **Page 2: Geographic Analysis**
 

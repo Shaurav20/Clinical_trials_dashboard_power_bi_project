@@ -191,6 +191,10 @@ Horizontal Bar: Top 10 Medical Conditions
 
 World Map: Geographic Distribution
 
+Executive Summary Dashboard image
+
+![1](./powerbi_dashboard_screenshots/Executive_summary_ss.png)
+
 **Page 2: Geographic Analysis**
 
 Filled Map: Country-wise Trial Distribution
@@ -201,6 +205,10 @@ Bar Chart: Top 10 Countries
 
 Pasted a multi-select slicer for selecting the trials based on trial status
 
+Geographic Analysis Dashboard image
+
+![2](./powerbi_dashboard_screenshots/Geographic_Analysis_ss.png)
+
 **Page 3: Medical Insights**
 
 Treemap: Top 20 Medical Conditions
@@ -210,6 +218,10 @@ Donut Chart: Intervention Types
 Matrix: Conditions vs Trial Phases
 
 Clustered Column: Interventions by Phase
+
+Medical Insights Dashboard image
+
+![3](./powerbi_dashboard_screenshots/Medical_insights_ss.png)
 
 **🔗 Data Model Relationships**
 
@@ -265,3 +277,4 @@ This project is licensed under the MIT License. You are free to use, modify, and
 - **ClinicalTrials.gov** for providing open-access clinical trial data
 - **Power BI community** for visualization inspiration and techniques
 - **MySQL & Python communities** for documentation and support resources
+

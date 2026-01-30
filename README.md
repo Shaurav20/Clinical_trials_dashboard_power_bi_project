@@ -191,7 +191,7 @@ Horizontal Bar: Top 10 Medical Conditions
 
 World Map: Geographic Distribution
 
-Executive Summary Dashboard image
+**Executive Summary Dashboard image**
 
 ![1](./powerbi_dashboard_screenshots/Executive_summary_ss.PNG)
 
@@ -205,7 +205,7 @@ Bar Chart: Top 10 Countries
 
 Pasted a multi-select slicer for selecting the trials based on trial status
 
-Geographic Analysis Dashboard image
+**Geographic Analysis Dashboard image**
 
 ![2](./powerbi_dashboard_screenshots/Geographic_Analysis_ss.PNG)
 
@@ -219,7 +219,7 @@ Matrix: Conditions vs Trial Phases
 
 Clustered Column: Interventions by Phase
 
-Medical Insights Dashboard image
+**Medical Insights Dashboard image**
 
 ![3](./powerbi_dashboard_screenshots/Medical_insights_ss.PNG)
 

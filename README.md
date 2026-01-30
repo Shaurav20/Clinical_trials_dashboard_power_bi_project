@@ -151,7 +151,6 @@ Verify relationships in Model view
 
 **Key Performance Indicators**
 
-dax
 Total Trials = COUNTROWS('clinical_trials trials')
 Active Trials = CALCULATE([Total Trials], clinical_trials trials[status] IN {"Recruiting","active_not_recruiting"})
 Completed Trials = CALCULATE([Total Trials], clinical_trials trials[status] = "Completed")
@@ -160,7 +159,6 @@ Active Rate = DIVIDE([Active Trials], [Total Trials], 0)
 
 **Advanced Calculations**
 
-dax
 Avg Trial Duration = 
 AVERAGEX(
     FILTER(
@@ -250,8 +248,8 @@ Use aggregations where possible
 ## Author
 **Shaurav Bhattacharyya**
 
-- GitHub: @Shaurav20(https://github.com/Shaurav20)
-- LinkedIn: Shaurav Bhattacharyya(https://www.linkedin.com/in/shaurav-bhattacharyya-a347b5156/)
+- GitHub: @Shaurav20 (https://github.com/Shaurav20)
+- LinkedIn: Shaurav Bhattacharyya (https://www.linkedin.com/in/shaurav-bhattacharyya-a347b5156/)
 - Email: shaurav.feb@gmail.com
 
 ## 📄 License

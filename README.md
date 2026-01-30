@@ -6,21 +6,21 @@ Building a comprehensive Power BI dashboard for analyzing clinical trial data ex
 
 ## 🚀 Features
 
-Interactive Dashboard: 3-page Power BI dashboard with executive summary, geographic analysis, and medical insights
+**Interactive Dashboard:** 3-page Power BI dashboard with executive summary, geographic analysis, and medical insights
 
-Primary Data Source: ClinicalTrials.gov API
+**Primary Data Source:** ClinicalTrials.gov API
 
-Data Pipeline: Automated extraction, cleaning, and MySQL database import
+**Data Pipeline:** Automated extraction, cleaning, and MySQL database import
 
-Real-time Analytics: 15+ calculated measures including trial completion rates, active trials, and average duration
+**Real-time Analytics:** 15+ calculated measures including trial completion rates, active trials, and average duration
 
-Geospatial Visualization: Country-wise trial distribution on interactive maps
+**Geospatial Visualization:** Country-wise trial distribution on interactive maps
 
-Medical Analysis: Condition and intervention analysis with treemaps and matrix visuals
+**Medical Analysis:** Condition and intervention analysis with treemaps and matrix visuals
 
-📁 Project Structure
+## 📁 Project Structure
 
-text
+```
 clinical-trials-dashboard/
 │
 ├── data_pipeline/
@@ -37,10 +37,11 @@ clinical-trials-dashboard/
 │   ├── Clinical_Trials_Dashboard.pbix  # Power BI dashboard file
 │
 └── README.md
+```
 
-⚙️ Setup Instructions
+## ⚙️ Setup Instructions
 
-Prerequisites
+### Prerequisites
 
 Python 3.8+ with pip
 
@@ -50,24 +51,26 @@ Power BI Desktop
 
 MySQL Connector/NET 9.5.0 (for Power BI connection)
 
-Methodology
+### Methodology
 
 Open Windows Power Shell and follow the below steps-
 
-Step 1: Python Environment Setup
-
+**Step 1: Python Environment Setup**
+```
 # Install required Python packages
 pip install pandas
 pip install mysql-connector-python
 pip install numpy
+```
 
-Step 2: Extract Data
-
+**Step 2: Extract Data**
+```
 # Navigate to the project directory
 cd <Path to your project directory>
 
 # Run extraction script
 python clinicaltrials_extract.py
+```
 
 Expected Output:
 Trials data written to: trials.csv
@@ -75,24 +78,26 @@ Locations data written to: locations.csv
 Conditions data written to: conditions.csv
 Interventions data written to: interventions.csv
 
-Step 3: Clean and Prepare Data
-
+**Step 3: Clean and Prepare Data**
+```
 # Clean files for MySQL import
 python Clean_files.py
 python Clean_files2.py  # Additional NaN cleaning
+```
 
 Open MySQL Workbench and follow the below step-
 
-Step 4: MySQL database creation
+**Step 4: MySQL database creation**
 
 Create database named clinical_trials and tables named trials, locations, conditions and interventions according to the SQL_script.
 
 After this, open Windows Power Shell and follow the below step-
 
-Step 5: Import to MySQL
-
+**Step 5: Import to MySQL**
+```
 # Import cleaned data to MySQL
 python SQL3.py
+```
 
 Expected Output:
 🚀 Starting MySQL Import with MySQL-Ready Files...
@@ -101,7 +106,7 @@ Expected Output:
 
 Open Microsoft Power BI Desktop and follow the below steps-
 
-Step 6: Power BI Configuration
+**Step 6: Power BI Configuration**
 
 Configure Global Settings:
 
@@ -119,7 +124,7 @@ Enable On-object interaction
 
 Restart Power BI
 
-Step 7: Connect Power BI to MySQL
+**Step 7: Connect Power BI to MySQL**
 
 Get Data → MySQL database
 
@@ -137,7 +142,7 @@ Load all 4 tables
 
 Verify relationships in Model view
 
-📈 DAX Measures Implemented
+**📈 DAX Measures Implemented**
 
 Key Performance Indicators
 dax
@@ -146,6 +151,7 @@ Active Trials = CALCULATE([Total Trials], clinical_trials trials[status] IN {"Re
 Completed Trials = CALCULATE([Total Trials], clinical_trials trials[status] = "Completed")
 Completion Rate = DIVIDE([Completed Trials], [Total Trials], 0)
 Active Rate = DIVIDE([Active Trials], [Total Trials], 0)
+
 Advanced Calculations
 dax
 Avg Trial Duration = 
@@ -164,7 +170,7 @@ AVERAGEX(
     )
 )
 
-🎨 Dashboard Pages
+**🎨 Dashboard Pages**
 
 Page 1: Executive Summary
 
@@ -200,7 +206,7 @@ Matrix: Conditions vs Trial Phases
 
 Clustered Column: Interventions by Phase
 
-🔗 Data Model Relationships
+**🔗 Data Model Relationships**
 
 Trials (1) → (Many) Locations
 
@@ -208,11 +214,9 @@ Trials (1) → (Many) Conditions
 
 Trials (1) → (Many) Interventions
 
-📝 Troubleshooting
+## 📝 Troubleshooting
 
-Common Issues & Solutions
-
-Power BI MySQL Connection Failed
+**Power BI MySQL Connection Failed**
 
 Install MySQL Connector/NET 9.5.0
 
@@ -220,28 +224,27 @@ Restart Power BI
 
 Verify MySQL service is running
 
-Python Module Errors
+**Python Module Errors**
 
-bash
+```
 pip install --upgrade pandas mysql-connector-python
+```
 
-NaN Values in Database
+**NaN Values in Database**
 
 Run Clean_files2.py for thorough cleaning
 
-Verify CSV encoding (UTF-8 recommended)
-
-Slow Dashboard Performance
+**Slow Dashboard Performance**
 
 Remove unnecessary columns in Power Query
 
 Use aggregations where possible
 
-📄 License
+## 📄 License
 
 This project is for educational and analytical purposes. Data sourced from ClinicalTrials.gov.
 
-👥 Acknowledgments
+## 👥 Acknowledgments
 
 ClinicalTrials.gov for providing the data
 

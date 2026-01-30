@@ -147,9 +147,9 @@ Load all 4 tables
 
 Verify relationships in Model view
 
-**📈 DAX Measures Implemented**
+### 📈 DAX Measures Implemented**
 
-Key Performance Indicators
+**Key Performance Indicators**
 
 dax
 Total Trials = COUNTROWS('clinical_trials trials')
@@ -158,7 +158,7 @@ Completed Trials = CALCULATE([Total Trials], clinical_trials trials[status] = "C
 Completion Rate = DIVIDE([Completed Trials], [Total Trials], 0)
 Active Rate = DIVIDE([Active Trials], [Total Trials], 0)
 
-Advanced Calculations
+**Advanced Calculations**
 
 dax
 Avg Trial Duration = 
@@ -177,7 +177,7 @@ AVERAGEX(
     )
 )
 
-**🎨 Dashboard Pages**
+### 🎨 Dashboard Pages**
 
 **Page 1: Executive Summary**
 

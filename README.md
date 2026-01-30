@@ -247,15 +247,23 @@ Remove unnecessary columns in Power Query
 
 Use aggregations where possible
 
+## Author
+**Shaurav Bhattacharyya**
+
+- GitHub: @Shaurav20(https://github.com/Shaurav20)
+- LinkedIn: Shaurav Bhattacharyya(https://www.linkedin.com/in/shaurav-bhattacharyya-a347b5156/)
+- Email: shaurav.feb@gmail.com
+
 ## 📄 License
 
-This project is for educational and analytical purposes. Data sourced from ClinicalTrials.gov.
+This project is licensed under the MIT License. You are free to use, modify, and distribute this code with appropriate attribution.
 
-## 👥 Acknowledgments
+**Notes:**
+- Intended for educational and analytical purposes only
+- Clinical trial data sourced from [ClinicalTrials.gov](https://clinicaltrials.gov/)
 
-ClinicalTrials.gov for providing the data
+## Acknowledgments
 
-Power BI community for visualization inspiration
-
-MySQL and Python developer communities
-
+- **ClinicalTrials.gov** for providing open-access clinical trial data
+- **Power BI community** for visualization inspiration and techniques
+- **MySQL & Python communities** for documentation and support resources

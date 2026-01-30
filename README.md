@@ -67,9 +67,11 @@ pip install numpy
 **Step 2: Extract Data**
 ```
 # Navigate to the project directory
+
 cd <Path to your project directory>
 
 # Run extraction script
+
 python clinicaltrials_extract.py
 ```
 
@@ -82,6 +84,7 @@ Interventions data written to: interventions.csv
 **Step 3: Clean and Prepare Data**
 ```
 # Clean files for MySQL import
+
 python Clean_files.py
 python Clean_files2.py  # Additional NaN cleaning
 ```
@@ -97,6 +100,7 @@ After this, open Windows Power Shell and follow the below step-
 **Step 5: Import to MySQL**
 ```
 # Import cleaned data to MySQL
+
 python SQL3.py
 ```
 
@@ -146,6 +150,7 @@ Verify relationships in Model view
 **📈 DAX Measures Implemented**
 
 Key Performance Indicators
+
 dax
 Total Trials = COUNTROWS('clinical_trials trials')
 Active Trials = CALCULATE([Total Trials], clinical_trials trials[status] IN {"Recruiting","active_not_recruiting"})
@@ -154,6 +159,7 @@ Completion Rate = DIVIDE([Completed Trials], [Total Trials], 0)
 Active Rate = DIVIDE([Active Trials], [Total Trials], 0)
 
 Advanced Calculations
+
 dax
 Avg Trial Duration = 
 AVERAGEX(
@@ -173,7 +179,7 @@ AVERAGEX(
 
 **🎨 Dashboard Pages**
 
-Page 1: Executive Summary
+**Page 1: Executive Summary**
 
 KPI Cards: Total Trials, Active Trials, Completion Rate, Enrolling Trials, Avg Trial Duration
 
@@ -187,7 +193,7 @@ Horizontal Bar: Top 10 Medical Conditions
 
 World Map: Geographic Distribution
 
-Page 2: Geographic Analysis
+**Page 2: Geographic Analysis**
 
 Filled Map: Country-wise Trial Distribution
 
@@ -197,7 +203,7 @@ Bar Chart: Top 10 Countries
 
 Pasted a multi-select slicer for selecting the trials based on trial status
 
-Page 3: Medical Insights
+**Page 3: Medical Insights**
 
 Treemap: Top 20 Medical Conditions
 

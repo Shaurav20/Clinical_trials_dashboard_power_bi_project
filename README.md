@@ -207,7 +207,7 @@ Pasted a multi-select slicer for selecting the trials based on trial status
 
 Geographic Analysis Dashboard image
 
-![2](./powerbi_dashboard_screenshots/Geographic_Analysis_ss.png)
+![2](./powerbi_dashboard_screenshots/Geographic_Analysis_ss.PNG)
 
 **Page 3: Medical Insights**
 
@@ -221,7 +221,7 @@ Clustered Column: Interventions by Phase
 
 Medical Insights Dashboard image
 
-![3](./powerbi_dashboard_screenshots/Medical_insights_ss.png)
+![3](./powerbi_dashboard_screenshots/Medical_insights_ss.PNG)
 
 **🔗 Data Model Relationships**
 

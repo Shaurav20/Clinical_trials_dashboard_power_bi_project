@@ -1,10 +1,10 @@
 # Clinical_trials_dashboard_power_bi_project
 
-## 📋 Project Overview
+## Project Overview
 
 Building a comprehensive Power BI dashboard for analyzing clinical trial data extracted from ClinicalTrials.gov, featuring 7,733+ clinical trials with their locations, conditions, and interventions. Utilized python programming, mysql and powerbi.
 
-## 🚀 Features
+## Features
 
 **Interactive Dashboard:** 3-page Power BI dashboard with executive summary, geographic analysis, and medical insights
 
@@ -18,7 +18,7 @@ Building a comprehensive Power BI dashboard for analyzing clinical trial data ex
 
 **Medical Analysis:** Condition and intervention analysis with treemaps and matrix visuals
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 clinical-trials-dashboard/
@@ -39,7 +39,7 @@ clinical-trials-dashboard/
 └── README.md
 ```
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 ### Prerequisites
 
@@ -105,9 +105,9 @@ python SQL3.py
 ```
 
 Expected Output:
-🚀 Starting MySQL Import with MySQL-Ready Files...
+Starting MySQL Import with MySQL-Ready Files...
 ...
-🎉 All data imported successfully!
+All data imported successfully!
 
 Open Microsoft Power BI Desktop and follow the below steps-
 
@@ -147,7 +147,7 @@ Load all 4 tables
 
 Verify relationships in Model view
 
-### 📈 DAX Measures Implemented**
+### DAX Measures Implemented**
 
 **Key Performance Indicators**
 
@@ -175,7 +175,7 @@ AVERAGEX(
     )
 )
 
-### 🎨 Dashboard Pages**
+### Dashboard Pages**
 
 **Page 1: Executive Summary**
 
@@ -231,7 +231,7 @@ Trials (1) → (Many) Conditions
 
 Trials (1) → (Many) Interventions
 
-## 📝 Troubleshooting
+## Troubleshooting
 
 **Power BI MySQL Connection Failed**
 
@@ -257,24 +257,20 @@ Remove unnecessary columns in Power Query
 
 Use aggregations where possible
 
+## License
+
+This project is licensed under the MIT License. You are free to use, modify, and distribute this code with appropriate attribution.
+
 ## Author
-**Shaurav Bhattacharyya**
+Shaurav Bhattacharyya
 
 - GitHub: @Shaurav20 (https://github.com/Shaurav20)
 - LinkedIn: Shaurav Bhattacharyya (https://www.linkedin.com/in/shaurav-bhattacharyya-a347b5156/)
 - Email: shaurav.feb@gmail.com
 
-## 📄 License
-
-This project is licensed under the MIT License. You are free to use, modify, and distribute this code with appropriate attribution.
-
-**Notes:**
-- Intended for educational and analytical purposes only
-- Clinical trial data sourced from [ClinicalTrials.gov](https://clinicaltrials.gov/)
-
 ## Acknowledgments
 
-- **ClinicalTrials.gov** for providing open-access clinical trial data
-- **Power BI community** for visualization inspiration and techniques
-- **MySQL & Python communities** for documentation and support resources
+- ClinicalTrials.gov for providing open-access clinical trial data
+- Power BI community for visualization inspiration and techniques
+- MySQL & Python communities for documentation and support resources
 

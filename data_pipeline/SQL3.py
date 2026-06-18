@@ -10,7 +10,7 @@ def create_db_connection():
         connection = mysql.connector.connect(
             host='localhost',
             user='root',
-            password='Shabhodaf20@mysql',
+            password='Your SQL password',
             database='clinical_trials'
         )
         return connection
